@@ -1,0 +1,12 @@
+package jco-testing:default;
+
+interface I {
+    resource data {
+      f: func();
+    }
+}
+
+world my-component {
+  use I.{data};
+  export id: func(x: data) -> data;
+}
