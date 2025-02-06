@@ -3,12 +3,17 @@
   "main": "dist/main.js",
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build"
+    "build": "parcel build",
+    "build-rollup": "rollup -c"
   },
   "devDependencies": {
-    "parcel": "^2.13.3"
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "parcel": "^2.13.3",
+    "rollup": "^4.34.4"
   },
   "dependencies": {
-    "@bytecodealliance/jco": "^1.9.1"
+    "@bytecodealliance/jco": "^1.9.1",
+    "vite": "^6.1.0"
   }
 }

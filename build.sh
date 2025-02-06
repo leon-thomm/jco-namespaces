@@ -8,5 +8,6 @@ popd
 
 pushd js
 npx jco transpile ../my-component/my-component.wasm -o src/my-component --tla-compat --map "jco-testing:default/I"="./interfaces/jco-testing-default-i.d"
-npm run build -- --no-cache
+# npm run build -- --no-cache
+npm run build-rollup -- --no-cache
 popd
